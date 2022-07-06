@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Xein's Linktree</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <script defer src="/assets/fontawesome/js/all.js"></script>
+
+    <style>
+        div {
+            display: block;
+        }
+
+        a {
+            color: lightblue;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0px 0px 14px;
+        }
+
+        h1, p, small {
+            color: lightblue;
+        }
+
+        * {
+            font-family: 'Varela Round', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .root {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 24px 33px 26px;
+        }
+
+        .background {
+            position: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("https://w.wallhaven.cc/full/r2/wallhaven-r2g7rm.jpg");
+            background-color: transparent;
+            image-orientation: from-image;
+            overflow: hidden;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            position: relative;
+            z-index: 2px;
+            margin-bottom: 100px;
+        }
+
+        .header {
+            position: relative;
+            max-width: 480px;
+            margin: 14px auto 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .profileIcon {
+            position: relative;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 12px;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .profileIconDetail {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+
+            border-radius: 75px;
+
+            background-size: cover;
+            background-image: url("https://c.tenor.com/NkAegm0IP8IAAAAC/popcat.gif");
+            background-color: transparent;
+        }
+        .profileTitle {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .profileSubtitle {
+            margin: 0;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        .profileSubtitle2 {
+            margin: 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .links {
+            max-width: 480px;
+            margin: 0px auto;
+        }
+        .links .button {
+            display: flex;
+            margin-bottom: 14px;
+            border: 2px solid white;
+        }
+        .links .button svg,
+        .links .button i {
+            color: white;
+            width: 48px;
+            height: 48px;
+            padding: 7px;
+            background: transparent;
+            overflow: hidden;
+        }
+        .links .image {
+            display: flex;
+            align-items: center;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            min-height: 30px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        .links .image img {
+            height: 300px;
+        }
+        .links h1,
+        .links p {
+            color: white;
+            line-height: 1.5;
+            word-break: break-all;
+        }
+        .links h1{
+            font-size: 1.2rem;
+        }
+        .links p{
+            font-size: 0.8rem;
+        }
+        
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            -webkit-box-align: center;
+        }
+    </style>
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but Xein's Linktree doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <!-- Master Root? -->
+    <div class="root">
+        <!-- Background -->
+        <div class="background"></div>
+        <!-- Main -->
+        <div class="main">
+            <!-- Header -->
+            <div class="header">
+                <div class="profile">
+                    <a target="_blank" href="#">Xein's Linktree</a>
+                </div>
+                <div class="profileIcon">
+                    <div class="profileIconDetail"></div>
+                </div>
+                <h1 class="profileTitle">我是标题</h1>
+                <p class="profileSubtitle">啊我就垃圾，没办法变成标题呜呜呜</p>
+                <p class="profileSubtitle2">介绍我这个小废物吧！</p>
+            </div>
+            <div class="links">
+                <!-- Images -->
+                <a target="_blank" class="button image" href="https://w.wallhaven.cc/full/z8/wallhaven-z8e8qy.jpg"><img src="https://w.wallhaven.cc/full/z8/wallhaven-z8e8qy.jpg"></a>
+                <!-- Links -->
+                <a target="_blank" class="button" href="#">
+                    <i class="fa-2x fa-brands fa-github"></i>
+                    <div style="padding: 5px 0px 0px 0px;">
+                        <h1>Github</h1>
+                        <p>@YourUsername</p>    
+                    </div>    
+                </a>
+                <a target="_blank" class="button" href="#">
+                    <i class="fa-2x fa-brands fa-twitter"></i>
+                    <div style="padding: 5px 0px 0px 0px;">
+                        <h1>Twitter</h1>
+                        <p>@YourUsername</p>    
+                    </div>    
+                </a>
+                <a target="_blank" class="button" href="#">
+                    <i class="fa-2x fa-brands fa-facebook"></i>
+                    <div style="padding: 5px 0px 0px 0px;">
+                        <h1>Facebook</h1>
+                        <p>@YourUsername</p>    
+                    </div>    
+                </a>
+                <a target="_blank" class="button" href="#">
+                    <i class="fa-2x fa-brands fa-discord"></i>
+                    <div style="padding: 5px 0px 0px 0px;">
+                        <h1>Discord</h1>
+                        <p>#YourUsername</p>    
+                    </div>    
+                </a>
+        </div>
+            <!-- Footer -->
+            <div class="footer">
+                <a target="_blank" href="#" style="text-decoration: underline; margin-bottom: 4px;">Xein's Linktree</a>
+                <small>&copy; Xein All Rights Reserved</small>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
